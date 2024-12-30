@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+form{
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding:20px;
+  margin: 70px;
+}
+
+.btn-color{
+   color: white;
+   background-color: blue;
+}
+
+.btn-color:hover{
+  background-color: rgb(61, 58, 216);
+}
+
+.container{
+   padding: 3px;
+}
+
+#signin{
+    background-color: white;
+    border: 2px solid blue;
+    color:black;
+    margin-left: 6px;
+}
+
+#signin:hover{
+  color: blue;
+}
+
+.email ,.password{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7px;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+p{
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  margin: 0.1px;
+  padding: 0px;
+}
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body{
+ 
+  display: flex;
+  justify-content: center;  /* Horizontally center */
+  align-items: center;      /* Vertically center */
+  height: 100vh;            /* Take up full viewport height */
+  background-color: rgb(226, 222, 222);
+}
+
+input{
+  border-radius: 4px;
+  border: 1px solid gray ;
+  padding: 5px;
+}
+
+button{
+  background-color: rgb(52, 52, 237);
+  color:white;
+  margin-top:10px;
+  font-size: 17px;
+  border-radius: 7px;
+  padding: 7px 17px;
+  border: none;
+}
+
+button:hover{
+  background-color: blue;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.info{
+  font-family: poppins;
+  margin: 0px;
+  padding: 0px;
+}

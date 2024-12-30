@@ -1,0 +1,119 @@
+body{
+  background-color: white;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  
+  background-color: white;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  background-color: #2d2d2d;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.component-container {
+  margin-left: 250px;
+  top: 0;
+  width: calc(100% - 250px);
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: column;
+  overflow-x: auto;
+  overflow-y: auto;
+ 
+}
+
+/* Material icon styling */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Sidebar button */
+.sidebar-button {
+  background-color: transparent;
+  color: white;
+  margin: 7px;
+  margin-top: 23px;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+}
+
+.font-control {
+  font-size: 22px;
+  margin-bottom: 3px;
+}
+
+.sidebar-button:active {
+  background-color: #767676;
+}
+
+.sidebar-button:hover {
+  background-color: #7676766d;
+}
+
+
+@media (max-width: 768px) {
+  .grid-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .component-container {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+    
+  }
+  
+  /* Toggle visibility for mobile */
+  .sidebar-button {
+    font-size: 14px;
+    height: auto;
+  }
+
+  .material-symbols-outlined {
+    font-size: 18px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .font-control {
+    font-size: 18px;
+  }
+
+  .sidebar-button {
+    font-size: 12px;
+    gap: 5px;
+  }
+
+  .material-symbols-outlined {
+    font-size: 16px;
+  }
+}

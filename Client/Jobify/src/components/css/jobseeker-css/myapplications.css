@@ -1,0 +1,72 @@
+/* Parent container */
+.parent {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    overflow-y: auto; 
+}
+
+
+/* List styling */
+.parent ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.parent li {
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.parent li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title and text styling */
+.parent p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.parent strong {
+    color: #007bff;
+}
+
+/* Button styling */
+.btn-center {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.parent button {
+    background: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.parent button:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+.parent button:active {
+    transform: translateY(0);
+}
